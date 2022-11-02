@@ -22,7 +22,7 @@ const reducer = (state, action) => {
     }
     case 'EDIT': {
       newState = state.map((item) =>
-        item.id === action.data.id ? { ...action.data } : it,
+        item.id === action.data.id ? { ...action.data } : item,
       );
       break;
     }
