@@ -1,6 +1,6 @@
 import ControlMenu from './ControlMenu';
-import SortOptionList from './../constants/SortOptionList';
-import FilterOptionList from '../constants/FilterOptionList';
+import SortOptionList from '../constants/sortOptionList';
+import FilterOptionList from '../constants/filterOptionList';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MyButton from './MyButton';

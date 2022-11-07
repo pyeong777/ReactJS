@@ -3,12 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import MyHeader from './MyHeader';
 import MyButton from './MyButton';
 import EmotionItem from './EmotionItem';
-import EmotionList from './../constants/EmotionList';
+import EmotionList from '../constants/emotionList';
 import { DiaryDispatchContext } from '../App';
-
-const getStringDate = (date) => {
-  return date.toISOString().slice(0, 10);
-};
+import { getStringDate } from '../util.js/date';
 
 const DiaryEditor = ({ isEdit, originData }) => {
   const contentRef = useRef();
