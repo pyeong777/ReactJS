@@ -1,4 +1,4 @@
-const EmotionList = [
+const emotionList = [
   {
     emotion_id: 1,
     emotion_img: process.env.PUBLIC_URL + `/assets/emotion1.png`,
@@ -26,4 +26,4 @@ const EmotionList = [
   },
 ];
 
-export default EmotionList;
+export default emotionList;

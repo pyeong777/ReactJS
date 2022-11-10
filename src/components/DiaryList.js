@@ -1,6 +1,6 @@
 import ControlMenu from './ControlMenu';
-import SortOptionList from '../constants/sortOptionList';
-import FilterOptionList from '../constants/filterOptionList';
+import sortOptionList from '../constants/sortOptionList';
+import filterOptionList from '../constants/filterOptionList';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MyButton from './MyButton';
@@ -43,12 +43,12 @@ const DiaryList = ({ diaryList }) => {
           <ControlMenu
             value={sortType}
             onChange={setSortType}
-            optionList={SortOptionList}
+            optionList={sortOptionList}
           />
           <ControlMenu
             value={filter}
             onChange={setFilter}
-            optionList={FilterOptionList}
+            optionList={filterOptionList}
           />
         </div>
         <div className="right_col">
