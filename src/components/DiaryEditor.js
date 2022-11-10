@@ -6,6 +6,7 @@ import EmotionItem from './EmotionItem';
 import emotionList from '../constants/emotionList';
 import { DiaryDispatchContext } from '../App';
 import { getStringDate } from '../util.js/date';
+import { useCallback } from 'react';
 
 const DiaryEditor = ({ isEdit, originData }) => {
   const contentRef = useRef();
@@ -39,9 +40,9 @@ const DiaryEditor = ({ isEdit, originData }) => {
     navigate('/', { replace: true });
   };
 
-  const handleClickEmote = (emotion) => {
+  const handleClickEmote = useCallback((emotion) => {
     setEmotion(emotion);
-  };
+  }, []);
 
   const handleRemove = () => {
     if (window.confirm('정말 삭제하시겠습니까?')) {
