@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import MyHeader from './MyHeader';
 import MyButton from './MyButton';
 import EmotionItem from './EmotionItem';
-import EmotionList from '../constants/emotionList';
+import emotionList from '../constants/emotionList';
 import { DiaryDispatchContext } from '../App';
 import { getStringDate } from '../util.js/date';
 
@@ -74,7 +74,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
         <section>
           <h4>오늘의 감정</h4>
           <div className="input_box emotion_list_wrapper">
-            {EmotionList.map((it) => (
+            {emotionList.map((it) => (
               <EmotionItem
                 key={it.emotion_id}
                 {...it}
